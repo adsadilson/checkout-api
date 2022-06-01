@@ -1,5 +1,6 @@
 package com.apss.ecommerce.checkout.service;
 
+import com.apss.ecommerce.checkout.Enums.Status;
 import com.apss.ecommerce.checkout.controller.checkout.CheckoutRequest;
 import com.apss.ecommerce.checkout.entity.CheckoutEntity;
 import com.apss.ecommerce.checkout.repository.CheckoutRepository;
@@ -19,6 +20,7 @@ public class CheckoutServiceImpl implements CheckoutService {
     public Optional<CheckoutEntity> create(CheckoutRequest obj) {
         CheckoutEntity checkout = CheckoutEntity.builder()
                 .code(UUID.randomUUID().toString())
+                .status(Status.CREATED)
                 .build();
         return Optional.of(repository.save(checkout));
     }
