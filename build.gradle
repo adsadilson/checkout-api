@@ -1,12 +1,13 @@
 plugins {
-	id 'org.springframework.boot' version '2.7.0'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'com.commercehub.gradle.plugin.avro' version '0.99.99'
+	id 'org.springframework.boot' version '2.3.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 }
 
 group = 'com.apss.ecommerce'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = "10"
+sourceCompatibility = "14"
 
 configurations {
 	compileOnly {
@@ -16,10 +17,11 @@ configurations {
 
 repositories {
 	mavenCentral()
+
 }
 
 ext {
-	set('springCloudVersion', "2021.0.3")
+	set('springCloudVersion', "Hoxton.SR6")
 }
 
 dependencies {
@@ -29,6 +31,7 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
 	implementation 'org.springframework.cloud:spring-cloud-stream'
 	implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka-streams'
+	implementation 'io.confluent:kafka-avro-serializer:5.5.0'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
@@ -41,6 +44,14 @@ dependencyManagement {
 	}
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
+}
+
+avro {
+	fieldVisibility = "PRIVATE"
+}
+
+generateAvroJava {
+	source 'src/main/resources/avro'
 }

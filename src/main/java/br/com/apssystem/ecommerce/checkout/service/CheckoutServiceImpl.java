@@ -1,9 +1,9 @@
-package com.apss.ecommerce.checkout.service;
+package br.com.apssystem.ecommerce.checkout.service;
 
-import com.apss.ecommerce.checkout.Enums.Status;
-import com.apss.ecommerce.checkout.controller.checkout.CheckoutRequest;
-import com.apss.ecommerce.checkout.entity.CheckoutEntity;
-import com.apss.ecommerce.checkout.repository.CheckoutRepository;
+import br.com.apssystem.ecommerce.checkout.resource.CheckoutRequest;
+import br.com.apssystem.ecommerce.checkout.enums.Status;
+import br.com.apssystem.ecommerce.checkout.entity.CheckoutEntity;
+import br.com.apssystem.ecommerce.checkout.repository.CheckoutRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

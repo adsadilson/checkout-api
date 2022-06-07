@@ -1,6 +1,6 @@
-package com.apss.ecommerce.checkout.repository;
+package br.com.apssystem.ecommerce.checkout.repository;
 
-import com.apss.ecommerce.checkout.entity.CheckoutEntity;
+import br.com.apssystem.ecommerce.checkout.entity.CheckoutEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

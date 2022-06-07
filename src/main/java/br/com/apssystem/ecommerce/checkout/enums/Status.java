@@ -1,4 +1,4 @@
-package com.apss.ecommerce.checkout.Enums;
+package br.com.apssystem.ecommerce.checkout.enums;
 
 public enum Status {
 

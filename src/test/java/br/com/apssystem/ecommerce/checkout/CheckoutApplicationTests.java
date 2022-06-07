@@ -1,4 +1,4 @@
-package com.apss.ecommerce.checkout;
+package br.com.apssystem.ecommerce.checkout;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

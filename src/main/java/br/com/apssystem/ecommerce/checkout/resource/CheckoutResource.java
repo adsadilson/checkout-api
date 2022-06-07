@@ -1,7 +1,7 @@
-package com.apss.ecommerce.checkout.controller.checkout;
+package br.com.apssystem.ecommerce.checkout.resource;
 
-import com.apss.ecommerce.checkout.entity.CheckoutEntity;
-import com.apss.ecommerce.checkout.service.CheckoutService;
+import br.com.apssystem.ecommerce.checkout.entity.CheckoutEntity;
+import br.com.apssystem.ecommerce.checkout.service.CheckoutService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/v1/checkouts")
 @RequiredArgsConstructor
-public class CheckoutController {
+public class CheckoutResource {
 
     private final CheckoutService service;
 

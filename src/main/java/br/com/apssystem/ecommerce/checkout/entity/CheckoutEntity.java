@@ -1,6 +1,6 @@
-package com.apss.ecommerce.checkout.entity;
+package br.com.apssystem.ecommerce.checkout.entity;
 
-import com.apss.ecommerce.checkout.Enums.Status;
+import br.com.apssystem.ecommerce.checkout.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.apss.ecommerce.checkout;
+package br.com.apssystem.ecommerce.checkout;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

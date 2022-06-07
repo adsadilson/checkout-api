@@ -1,4 +1,4 @@
-package com.apss.ecommerce.checkout.controller.checkout;
+package br.com.apssystem.ecommerce.checkout.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
