@@ -6,6 +6,11 @@
         {
             "name": "checkoutCode",
             "type": ["string"]
+        },
+        {
+            "name": "checkoutStatus",
+            "type": ["string"]
         }
+
     ]
 }
